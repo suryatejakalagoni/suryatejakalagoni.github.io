@@ -3,103 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Typer Pro | Download</title>
+    <title>Surya Teja | App Hub</title>
     <style>
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: #0d1117; 
-            color: white; 
-            margin: 0; 
-            padding: 20px;
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
+        :root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #f0f6fc; --gray: #8b949e; --green: #238636; --blue: #007bff; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
+        h1 { margin-bottom: 30px; font-size: 2.2rem; }
+        
+        /* The Two-Section Grid */
+        .hub-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 30px; 
+            width: 100%; 
+            max-width: 900px; 
         }
-        .container { 
-            text-align: center; 
-            background: #161b22; 
-            padding: 40px; 
+
+        .section-card { 
+            background: var(--card); 
+            padding: 30px; 
             border-radius: 16px; 
-            border: 1px solid #30363d;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-            max-width: 420px;
-            width: 100%;
-        }
-        h1 { 
-            font-size: 2rem; 
-            margin-top: 0;
-            color: #f0f6fc; 
-            margin-bottom: 15px;
-        }
-        p {
-            color: #8b949e;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            font-size: 0.95rem;
-        }
-        .btn { 
-            background-color: #238636; 
-            color: white; 
-            padding: 16px 32px; 
-            text-decoration: none; 
-            border-radius: 8px; 
-            font-weight: bold; 
-            font-size: 1.1rem; 
-            display: block; 
-            transition: 0.2s; 
-        }
-        .btn:hover { 
-            background-color: #2ea043; 
-            transform: scale(1.02);
-        }
-        .security-box {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #30363d;
-            text-align: left;
-        }
-        .security-box h3 {
-            font-size: 0.9rem;
-            color: #f0f6fc;
-            margin-bottom: 8px;
+            border: 1px solid var(--border); 
+            text-align: center;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        .security-text {
-            color: #8b949e;
-            font-size: 0.85rem;
-            line-height: 1.4;
-        }
-        .github-link { 
-            display: inline-block; 
-            margin-top: 20px; 
-            color: #58a6ff; 
-            text-decoration: none; 
-            font-size: 0.85rem; 
-        }
-        .github-link:hover { text-decoration: underline; }
+
+        .section-header { border-bottom: 1px solid var(--border); margin-bottom: 20px; padding-bottom: 10px; }
+        .section-header h2 { margin: 0; font-size: 1.5rem; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; }
+
+        .app-title { font-size: 1.8rem; margin: 15px 0 5px 0; }
+        .app-desc { color: var(--gray); font-size: 0.95rem; margin-bottom: 25px; min-height: 50px; }
+
+        .btn { padding: 16px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.2s; display: block; color: white; }
+        .btn-desktop { background-color: var(--green); }
+        .btn-desktop:hover { background-color: #2ea043; transform: translateY(-2px); }
+        .btn-mobile { background-color: var(--blue); }
+        .btn-mobile:hover { background-color: #0056b3; transform: translateY(-2px); }
+
+        .security { margin-top: 40px; max-width: 900px; width: 100%; font-size: 0.85rem; color: var(--gray); background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid var(--border); }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>🚀 Auto Typer Pro</h1>
-        <p>A high-speed automated typing utility with human-like variance and ghost-mode system tray support.</p>
-        
-        <a href="https://github.com/suryatejakalagoni/Auto-Typer-Pro/releases/latest/download/AutoTyperPro.exe" class="btn">
-            ⬇️ Download Now (.EXE)
-        </a>
+    <h1>Surya Teja's App Hub</h1>
 
-        <div class="security-box">
-            <h3>🛡️ Security Note</h3>
-            <div class="security-text">
-                Windows may flag this as an "unrecognized app" because it is an independent open-source tool. 
-                To run, click <b>"More info"</b> then <b>"Run anyway"</b>.
+    <div class="hub-grid">
+        
+        <div class="section-card">
+            <div class="section-header"><h2>💻 Desktop Apps</h2></div>
+            <div>
+                <h3 class="app-title">Auto Typer Pro</h3>
+                <p class="app-desc">High-speed automated typing with human-like variance for Windows.</p>
+                <a href="https://github.com/suryatejakalagoni/Auto-Typer-Pro/releases/latest/download/AutoTyperPro.exe" class="btn btn-desktop">⬇️ Download (.EXE)</a>
             </div>
         </div>
-        
-        <a href="https://github.com/suryatejakalagoni/Auto-Typer-Pro" class="github-link">View Project on GitHub</a>
+
+        <div class="section-card">
+            <div class="section-header"><h2>📱 Mobile Apps</h2></div>
+            <div>
+                <h3 class="app-title">Gate Keeper</h3>
+                <p class="app-desc">Security and notification management built with Flutter.</p>
+                <a href="https://github.com/suryatejakalagoni/gate-keeper/releases/latest/download/app-release.apk" class="btn btn-mobile">⬇️ Download (.APK)</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="security">
+        <strong>🛡️ Installation Notes:</strong><br>
+        • <b>Windows:</b> If prompted by SmartScreen, click "More info" then "Run anyway".<br>
+        • <b>Android:</b> Ensure "Install from Unknown Sources" is enabled in your phone's settings to run the APK.
     </div>
 
 </body>
