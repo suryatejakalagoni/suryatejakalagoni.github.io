@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Teja | App Portfolio</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: white; margin: 0; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+        h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { color: #8b949e; margin-bottom: 40px; }
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; width: 100%; max-width: 1000px; }
+        .app-card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 25px; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .app-card:hover { transform: translateY(-5-px); border-color: #58a6ff; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        h2 { margin-top: 0; color: #f0f6fc; }
+        p { color: #8b949e; font-size: 0.95rem; line-height: 1.5; }
+        .btn { background-color: #238636; color: white; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center; margin-top: 20px; transition: 0.2s; }
+        .btn:hover { background-color: #2ea043; }
+        .secondary-link { color: #58a6ff; text-decoration: none; font-size: 0.85rem; margin-top: 10px; display: block; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <h1>Surya Teja's App Hub</h1>
+    <p class="subtitle">Computer Science Student & Developer</p>
+
+    <div class="app-grid">
+        <div class="app-card">
+            <div>
+                <h2>🚀 Auto Typer Pro</h2>
+                <p>Advanced automated typing with human-like variance and system tray integration. Perfect for automating repetitive text tasks.</p>
+            </div>
+            <a href="https://github.com/suryatejakalagoni/Auto-Typer-Pro/releases/latest/download/AutoTyperPro.exe" class="btn">⬇️ Download .EXE</a>
+            <a href="https://github.com/suryatejakalagoni/Auto-Typer-Pro" class="secondary-link">View Source Code</a>
+        </div>
+
+        <div class="app-card">
+            <div>
+                <h2>🚗 ThriftyGo</h2>
+                <p>A budget-friendly ride-sharing service designed specifically for students. Saving money while moving together.</p>
+            </div>
+            <a href="#" class="btn" style="background-color: #30363d;">Coming Soon</a>
+        </div>
+
+        <div class="app-card">
+            <div>
+                <h2>👗 Ivaara</h2>
+                <p>AI-driven custom outfit design platform connecting users with local tailors through generative fashion AI.</p>
+            </div>
+            <a href="#" class="btn" style="background-color: #30363d;">Under Development</a>
+        </div>
+    </div>
+
+</body>
+</html>
